@@ -1,0 +1,3 @@
+:root { --primary: #2563eb; }
+.container { max-width: 900px; margin: 0 auto; }
+.bg-primary { background: var(--primary); }
