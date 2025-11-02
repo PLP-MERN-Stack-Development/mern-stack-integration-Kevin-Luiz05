@@ -1,78 +1,38 @@
-# MERN Stack Integration Assignment
+# MERN Blog — PLP Africa Week 4
 
-This assignment focuses on building a full-stack MERN (MongoDB, Express.js, React.js, Node.js) application that demonstrates seamless integration between front-end and back-end components.
+## Overview
+Full MERN blog application with posts, categories, comments, user auth, image uploads, pagination & search.
 
-## Assignment Overview
+## Run locally
+### Server
+1. cd server
+2. copy `.env.example` -> `.env` and fill values (MONGO_URI, JWT_SECRET)
+3. npm install
+4. npm run dev
 
-You will build a blog application with the following features:
-1. RESTful API with Express.js and MongoDB
-2. React front-end with component architecture
-3. Full CRUD functionality for blog posts
-4. User authentication and authorization
-5. Advanced features like image uploads and comments
+### Client
+1. cd client
+2. npm install
+3. npm run dev
 
-## Project Structure
+## API docs (high level)
+- POST /api/auth/register
+- POST /api/auth/login
+- GET /api/posts
+- GET /api/posts/:id
+- POST /api/posts (protected, form-data: featuredImage)
+- PUT /api/posts/:id (protected)
+- DELETE /api/posts/:id (protected)
+- GET /api/categories
+- POST /api/categories (protected)
+- POST /api/posts/:id/comments
 
-```
-mern-blog/
-├── client/                 # React front-end
-│   ├── public/             # Static files
-│   ├── src/                # React source code
-│   │   ├── components/     # Reusable components
-│   │   ├── pages/          # Page components
-│   │   ├── hooks/          # Custom React hooks
-│   │   ├── services/       # API services
-│   │   ├── context/        # React context providers
-│   │   └── App.jsx         # Main application component
-│   └── package.json        # Client dependencies
-├── server/                 # Express.js back-end
-│   ├── config/             # Configuration files
-│   ├── controllers/        # Route controllers
-│   ├── models/             # Mongoose models
-│   ├── routes/             # API routes
-│   ├── middleware/         # Custom middleware
-│   ├── utils/              # Utility functions
-│   ├── server.js           # Main server file
-│   └── package.json        # Server dependencies
-└── README.md               # Project documentation
-```
+## Screenshots
+![](./file:///C:/Users/princ/Power%20Learn%20Project%20PLP%20Africa/Full%20Stack%20Development%20MERN%20Specialization/Week4_MERN%20Stack/MERN-blog/Deployment%20Screenshots/Screenshot%202025-11-02%20222331.png)
+![](./file:///C:/Users/princ/Power%20Learn%20Project%20PLP%20Africa/Full%20Stack%20Development%20MERN%20Specialization/Week4_MERN%20Stack/MERN-blog/Deployment%20Screenshots/Screenshot%202025-11-02%20222301.png)
+![](./file:///C:/Users/princ/Power%20Learn%20Project%20PLP%20Africa/Full%20Stack%20Development%20MERN%20Specialization/Week4_MERN%20Stack/MERN-blog/Deployment%20Screenshots/Screenshot%202025-11-02%20222402.png)
+![](./file:///C:/Users/princ/Power%20Learn%20Project%20PLP%20Africa/Full%20Stack%20Development%20MERN%20Specialization/Week4_MERN%20Stack/MERN-blog/Deployment%20Screenshots/Screenshot%202025-11-02%20222541.png)
 
-## Getting Started
-
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Follow the setup instructions in the `Week4-Assignment.md` file
-4. Complete the tasks outlined in the assignment
-
-## Files Included
-
-- `Week4-Assignment.md`: Detailed assignment instructions
-- Starter code for both client and server:
-  - Basic project structure
-  - Configuration files
-  - Sample models and components
-
-## Requirements
-
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- npm or yarn
-- Git
-
-## Submission
-
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
-
-1. Complete both the client and server portions of the application
-2. Implement all required API endpoints
-3. Create the necessary React components and hooks
-4. Document your API and setup process in the README.md
-5. Include screenshots of your working application
-
-## Resources
-
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [Express.js Documentation](https://expressjs.com/)
-- [React Documentation](https://react.dev/)
-- [Node.js Documentation](https://nodejs.org/en/docs/)
-- [Mongoose Documentation](https://mongoosejs.com/docs/) 
+## Deployment
+- Client deployed to: <client-url>
+- Server deployed to: <server-url>
